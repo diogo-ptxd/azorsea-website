@@ -201,10 +201,15 @@ body {
 @media(max-width: 900px) {
     .topnav-m {
         display: block;
+        width: 100%;
+        border-radius: 5px;
     }
 
     .wrap {
         display: none;
+    }
+    .topnav-m img{
+        max-width: 250px;
     }
 }
 
@@ -596,6 +601,13 @@ body {
         text-align: center;
         /* Center text for smaller screens */
     }
+    .aboutuswrap{
+        width: 100%;
+    }
+    .maps{
+        height: fit-content;
+        max-height: fit-content;
+    }
 }
 
 /* Receive lastest updates threw e-mail box Styling */
@@ -743,5 +755,9 @@ body {
         width: 100%;
         /* Each container occupies 25% of the width */
         color: white;
+    }
+    .copyrightlogos img{
+        width: 150px;
+        max-width: 250px;
     }
 }
