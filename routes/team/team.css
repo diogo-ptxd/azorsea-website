@@ -191,6 +191,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
+
     /* Align the content at the top */
 }
 
@@ -198,10 +200,14 @@ iframe {
     border-radius: 25px;
     justify-content: center;
     border: 2px solid rgb(240, 228, 86);
-    margin: 0 auto;
 }
+body{
+    overflow-x: hidden;
 
+}
 .maps {
+    overflow: hidden;
+
     display: flex;
     justify-content: left;
     height: 450px;
@@ -226,11 +232,14 @@ iframe {
     max-height: 40px;
     font-family: 'Courier New', Courier, monospace;
     border: 2px solid rgba(245, 222, 179, 0.8);
-    background-color: hsla(48, 88%, 43%, 0.8);
+    background-color: rgba(63, 91, 252, 0.8);
     padding: 5px;
     margin-left: 20px;
     border-radius: 25px;
+    max-width: 33%;
 }
+
+/* End of map styling */
 
 /* Structural styling for container */
 /* Styling tables */
