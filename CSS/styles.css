@@ -1,0 +1,555 @@
+body {
+    margin: 0;
+    background-image: url("../images/azoresea.jpg");
+    image-rendering: optimizeQuality;
+    image-orientation: from-image;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.wrap {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Start of topnav */
+
+/* Topnav styles */
+.topnav {
+    max-width: fit-content;
+    justify-content: center;
+    width: fit-content;
+    height: 5%;
+    background-color: rgba(63, 201, 252, 0.6);
+    margin: 5px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+    /* Add this line to set the z-index */
+}
+
+/* TODO: Possibly reshape the colors and add some extra smoothness to the animations, if possible also recolour the style, looks kinda boring. */
+.home {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    width: fit-content;
+    max-height: fit-content;
+}
+
+.home:hover {
+    margin: 10px;
+    color: rgb(250, 250, 111);
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(240, 228, 86);
+    max-height: fit-content;
+    color: rgb(255, 255, 255);
+}
+
+.about {
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: fit-content;
+    max-height: fit-content;
+}
+
+.about:hover {
+    margin: 10px;
+    color: rgb(250, 250, 111);
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(240, 228, 86);
+    max-height: fit-content;
+    color: rgb(255, 255, 255);
+}
+
+.services {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    width: fit-content;
+    max-height: fit-content;
+}
+
+.services:hover {
+    margin: 10px;
+    color: rgb(250, 250, 111);
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(240, 228, 86);
+    max-height: fit-content;
+    color: rgb(255, 255, 255);
+}
+/* Feature Removed due to lack of necessity
+.preco {
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: fit-content;
+    max-height: fit-content;
+}
+
+.preco:hover {
+    margin: 10px;
+    color: rgb(250, 250, 111);
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(240, 228, 86);
+    max-height: fit-content;
+    color: rgb(255, 255, 255);
+}*/
+
+.equipa {
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: fit-content;
+    max-height: fit-content;
+}
+
+.equipa:hover {
+    margin: 10px;
+    color: rgb(250, 250, 111);
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(240, 228, 86);
+    max-height: fit-content;
+    color: rgb(255, 255, 255);
+}
+
+.blog {
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: fit-content;
+    max-height: fit-content;
+}
+
+.blog:hover {
+    margin: 10px;
+    color: rgb(250, 250, 111);
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(240, 228, 86);
+    max-height: fit-content;
+    color: rgb(255, 255, 255);
+}
+
+/* In order to not constantly repeat the font family,
+   And some other settings we just declare them here. */
+
+.slideshow-container a,
+.topnav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.slideshow-container a:hover,
+.topnav a:hover {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    color: white;
+}
+
+/* End of topnav */
+
+
+/* Slideshow container */
+
+/* Styles for the slideshow background */
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Place behind other content */
+    /* Add other styles for your slideshow */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    background-attachment: fixed;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.mySlides img {
+    pointer-events: none;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/* Scrollbar Styling */
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgb(135, 133, 133);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Start of Maps Styling */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+
+    /* Align the content at the top */
+}
+
+iframe {
+    border-radius: 25px;
+    justify-content: center;
+    border: 2px solid rgb(240, 228, 86);
+}
+body{
+    overflow-x: hidden;
+
+}
+.maps {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: left;
+    height: 450px;
+    max-width: 100%;
+    /* Height might need adjustments if any layout changes + TODO: Change layout of the maps in the future due to it looking ugly at the moment */
+    /* Add any additional styling for your .maps container below this comment for organizing purposes */
+}
+
+.maps h2 {
+    color: white;
+    padding: 10px;
+    max-height: 40px;
+}
+
+.maps h3 {
+    color: white;
+    padding: 10px;
+    max-height: 40px;
+}
+
+.maps table {
+    max-height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgba(245, 222, 179, 0.8);
+    background-color: rgba(63, 91, 252, 0.8);
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 25px;
+    max-width: 33%;
+}
+
+/* End of map styling */
+
+/* Beginning of about us styling */
+
+.seemorebtn {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.seemorebtn:hover {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* About Us */
+.aboutuswrap {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin: 20px auto;
+    /* Add margin for separation from the wall and auto for centering */
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    /* Add border radius here */
+}
+
+.aboutus {
+    width: fit-content;
+    display: flex;
+}
+
+.aboutus img {
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    width: 540px;
+    pointer-events: none;
+    height: 360px;
+}
+
+.aboutus-table-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.aboutus-table-wrap h1 {
+    height: auto;
+    margin: 0;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+}
+
+.aboutus-table-wrap p {
+    height: auto;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    /* You can adjust this as needed */
+}
+
+.aboutus-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns the button to the right */
+    margin-top: 20px;
+    margin-left: 20px;
+    /* Adjust margin as needed */
+}
+
+.aboutus-btn-wrapper {
+    position: relative;
+}
+
+.aboutus-btn {
+    background-color: hsla(191, 100%, 50%, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
+    width: 100px;
+    /* Adjust the width as needed */
+    height: 40px;
+    /* Adjust the height as needed */
+    border-radius: 5px;
+    /* Makes it more square with rounded corners */
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    /* Adjust the distance from the bottom */
+    right: 10px;
+    /* Adjust the distance from the right */
+    transition: 0.3s;
+}
+
+/* End of about us styling */
+
+/* Starting partners section styling */
+.partners {
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(63, 201, 252, 0.8);
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    overflow: hidden;
+    /* Use flexbox to create a horizontal layout */
+}
+
+.container,
+.container-services,
+.container-links,
+.container-contacts {
+    padding: 20px;
+    width: 20%;
+    /* Each container occupies 25% of the width */
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.container h2,
+.container-services h2,
+.container-links h2,
+.container-contacts h2 {
+    color: rgba(250, 201, 64, 255);
+}
+
+.partners a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px;
+    transition: 0.3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.partners a:hover {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+.partners p {
+    height: auto;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    /* You can adjust this as needed */
+}
+
+.copyrightlogos {
+    background-color: rgb(255, 234, 0);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    /* Center text content */
+}
+
+.copyrightlogos img {
+    width: 50%;
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }

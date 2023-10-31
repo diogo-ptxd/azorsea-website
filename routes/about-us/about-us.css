@@ -1,0 +1,120 @@
+/* service card section */
+.card-wrapper{
+    display: flex;
+}
+
+.service-card {
+    display: flex;
+    margin-right: 20px;
+    /* Adjust the margin value to control the space between service cards */
+    background-color: rgba(0, 70, 128, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 2px;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.pricing-table{
+    display: flex;
+    width: fit-content;
+}
+.wrapper{
+    height: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(0, 70, 128, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    margin-right: 10px;
+    color: white;
+    width: fit-content;
+}
+.wrapper h2{
+    color: rgb(255, 244, 225);
+}
+
+.service-card img {
+    max-width: 280px;
+    min-width: 280px;
+    max-height: 200px;
+    filter: brightness(1.2);
+    /* Adjust brightness */
+    filter: contrast(1.2);
+    /* Adjust contrast */
+    filter: saturate(1.2);
+    /* Adjust saturation */
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 10px 15px 10px 5px;
+    /* bottom right top left */
+    justify-content: center;
+    /* Center horizontally */
+    pointer-events: none;
+
+}
+
+/* Setting the styles for the pricing box */
+.pricing-box {
+    display: flex;
+    padding: 10px;
+    right: 0;
+    margin-left: auto;
+    display: table;
+}
+
+.price-marker {
+    border-radius: 5px;
+    background-color: rgb(1, 167, 3);
+    /* Red marker background color */
+    color: white;
+    /* White text color */
+    width: 40px;
+    /* Marker width */
+    height: 40px;
+    /* Marker height */
+    display: flex;
+    align-items: center;
+    /* Align in height */
+    justify-content: center;
+    /* Align in width */
+    margin: 5px;
+    padding: 2px;
+}
+.bottom-marker{
+    background-color: red;
+}
+
+
+.seemorebtn {
+    background-color: rgba(0, 70, 128, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.seemorebtn:hover {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.service-details {
+    color: rgba(245, 222, 179, 0.9);
+    font-size: 18px;
+}
+
+.service-details p {
+    font-size: 20px;
+}
+
+.service-image {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
