@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/styles.css">
-    <link rel="stylesheet" href="/routes/Servicos/CSS/passeio.css">
+    <link rel="stylesheet" href="/routes/Servicos/CSS/servicoStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
     <script src="../../JS/main.js"></script>
     <title>AzorSea</title>
 </head>
 
 <body>
-    <!-- We use wrap for centering our topnav -->
+    <!-- Wrap for centering navbar -->
     <div class="wrap">
-        <!-- topnav is used as a container for the sections -->
+        <!-- Topnav for PC -->
         <div class="topnav" id="topnavId">
 
-            <a href="../../HTML/index.html"><img src="../../images/logo.png" width="210px" height="50px" ;></a>
+            <a href="#"><img src="/images/logo.png" width="210px" height="50px" ;></a>
             <!-- Home Section aka Main Page Navigation Section -->
             <div class="home">
-                <a href="../../HTML/index.html">Home</a>
+                <a href="/HTML/index.html">Home</a>
             </div>
             <!-- About Section -->
             <div class="about">
@@ -27,11 +29,11 @@
             </div>
             <!-- Services Section -->
             <div class="services">
-                <a href="#">Serviços</a>
+                <a href="/routes/Servicos/servicos.html">Serviços</a>
             </div>
             <!-- Pricing Section -->
             <div class="equipa">
-                <a href="/routes/team/team.html">Equipa</a>
+                <a href="#">Equipa</a>
             </div>
             <div class="blog">
                 <a href="#">Blog</a>
@@ -39,6 +41,43 @@
         </div>
     </div>
     <!-- End of wrap -->
+
+    <!-- Topnav for Mobile -->
+    <!-- Top Navigation Menu -->
+    <div class="topnav-m">
+        <img src="/images/logo.png" alt="">
+        <!-- Navigation links (hidden by default) -->
+        <div class="mobile-links" id="myLinks">
+            <a href="/HTML/index.html">Home</a>
+            <a href="/routes/about-us/aboutus.html">Sobre Nós</a>
+            <a href="/routes/Servicos/servicos.html">Serviços</a>
+            <a href="/routes/team/team.html">Equipa</a>
+            <a href="#about">Blog</a>
+        </div>
+        <!-- Hamburguer Menu Script -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Script to make hamburguer work -->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var burguerDrop = document.getElementById("myLinks");
+            if (burguerDrop.style.maxHeight === "0px") {
+                burguerDrop.style.display = "block";
+                burguerDrop.style.transition = "max-height 2s ease"; // Add a 2-second transition
+                burguerDrop.style.maxHeight = "1000px"; // Change max-height to reveal the links
+            } else {
+                burguerDrop.style.transition = "max-height 0.3s ease"; // Add a 0.3-second transition for closing
+                burguerDrop.style.maxHeight = "0px"; // Change max-height to hide the links
+            }
+        }
+        myFunction();
+    </script>
+    <!-- End of Topnav for Mobile -->
+
     <!-- Slideshow container -->
     <div class="fogwrapper">
         <div class="slideshow-container">
@@ -199,31 +238,33 @@
     </div>
 
     <div class="card-container">
-    <div class="service-card">
-        <div class="service-image">
-            <img src="../../images/azorsea_boat.jpg" alt="Service Image 2">
-        </div>
-        <div class="service-details" id="mergulho">
-            <h2>Mergulho</h2>
-            <p>Na AzorSea Adventures, oferecemos-lhe uma oportunidade única de explorar o fascinante mundo marinho com
-                as nossas experiências de mergulho. <br><br> Mergulhe em águas cristalinas e descubra uma variedade de
-                espécies marinhas e recifes de coral deslumbrantes.</p>
-            <a href="/routes/Servicos/Mergulho/mergulho.html" class="btnlink">
-                <button class="seemorebtn">Saiba Mais</button>
-            </a>
-        </div>
-        <div class="pricing-box">
-            <div class="price-marker">35€</div>
-            <div class="price-details">
-                <!-- Include other pricing details here -->
+        <div class="service-card">
+            <div class="service-image">
+                <img src="../../images/azorsea_boat.jpg" alt="Service Image 2">
+            </div>
+            <div class="service-details" id="mergulho">
+                <h2>Mergulho</h2>
+                <p>Na AzorSea Adventures, oferecemos-lhe uma oportunidade única de explorar o fascinante mundo marinho
+                    com
+                    as nossas experiências de mergulho. <br><br> Mergulhe em águas cristalinas e descubra uma variedade
+                    de
+                    espécies marinhas e recifes de coral deslumbrantes.</p>
+                <a href="/routes/Servicos/Mergulho/mergulho.html" class="btnlink">
+                    <button class="seemorebtn">Saiba Mais</button>
+                </a>
+            </div>
+            <div class="pricing-box">
+                <div class="price-marker">35€</div>
+                <div class="price-details">
+                    <!-- Include other pricing details here -->
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="partners">
         <div class="container">
-            <img src="../../images/logo.png" alt="" width="200px">
+            <img src="/images/logo.png" alt="" width="200px">
             <p>A Azorsea Adventures oferece uma experiência excepcional
                 em passeios marítimos e pesca desportiva, fruto da nossa
                 vasta experiência e profundo conhecimento dos locais ideais
@@ -237,19 +278,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="service1.html">Passeios de Barco</a></td>
+                    <td><a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html">Passeios de Barco</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service2.html">Pesca de Fundo</a></td>
+                    <td><a href="/routes/Servicos/PescadeFundo/pescadefundo.html">Pesca de Fundo</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service3.html">Corrico de Costa</a></td>
+                    <td><a href="/routes/Servicos/CorricodeCosta/corrico.html">Corrico de Costa</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service4.html">Mergulho</a></td>
+                    <td><a href="/routes/Servicos/Mergulho/mergulho.html">Mergulho</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service5.html">Big Game Fishing</a></td>
+                    <td><a href="/routes/Servicos/BigGameFishing/biggamefishing.html">Big Game Fishing</a></td>
                 </tr>
             </table>
         </div>
@@ -302,6 +343,22 @@
         </div>
     </div>
 
+    <div class="copyrightlogos">
+        <img src="/images/logo.png" usemap="#image-map">
+
+        <map name="image-map">
+            <!--
+        <area target="" alt="Açores 2020" title="Açores 2020" href="http://poacores2020.azores.gov.pt/"
+            coords="1,0,648,183" shape="rect">
+        <area target="" alt="Governo dos Açores" title="Governo dos Açores" href="https://portal.azores.gov.pt/"
+            coords="655,2,1439,183" shape="rect">
+        <area target="" alt="Portugal 2020" title="Portugal 2020" href="https://portugal2020.pt/"
+            coords="1439,0,2033,183" shape="rect">
+        <area target="" alt="União Europeia" title="União Europeia" href="https://european-union.europa.eu/index_pt"
+            coords="2036,2,2696,183" shape="rect">-->
+        </map>
+        <p>Copyright © 2023 AzorSea Adventures. Todos os direitos reservados.</p>
+    </div>
     <!-- Script for Auto loading slides + changing the current active dot -->
     <script>
         let i;
