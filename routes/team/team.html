@@ -63,6 +63,8 @@
 
     <!-- Script to make hamburguer work -->
     <script>
+        myFunction();
+        myFunction();
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
         function myFunction() {
             var burguerDrop = document.getElementById("myLinks");
@@ -116,18 +118,14 @@
 
     <!-- Creating tables for short company resume -->
     <div class="alltablewrap">
-        <div class="tablecontainer1">
-            <div class="iconwrap1">
+        <div class="tablecontainer">
+            <div class="iconwrap">
                 <td>
                     <img src="/images/clock.png" width="70px" height="70px">
                 </td>
-                <td>
-                    <h2>1</h2>
-                </td>
             </div>
 
-
-            <table>
+            <table class="text-table">
                 <tr>
                     <td>Com um histórico notável, a AzorSea Adventures oferece excelentes serviços há anos,
                         estabelecendo um padrão de excelência no setor de aventuras e exploração, garantindo
@@ -137,13 +135,10 @@
             </table>
         </div>
 
-        <div class="tablecontainer2">
-            <div class="iconwrap2">
+        <div class="tablecontainer">
+            <div class="iconwrap">
                 <td>
                     <img src="/images/fish.png" width="95px" height="55px">
-                </td>
-                <td>
-                    <h2>2</h2>
                 </td>
             </div>
             <table>
@@ -154,13 +149,10 @@
             </table>
         </div>
 
-        <div class="tablecontainer3">
-            <div class="iconwrap3">
+        <div class="tablecontainer">
+            <div class="iconwrap">
                 <td>
                     <img src="/images/brief.png" width="60px" height="50px">
-                </td>
-                <td>
-                    <h2>3</h2>
                 </td>
             </div>
             <table>
@@ -172,12 +164,9 @@
         </div>
 
         <div class="tablecontainer4">
-            <div class="iconwrap3">
+            <div class="iconwrap">
                 <td>
                     <img src="/images/barco.png" width="120px" height="60px">
-                </td>
-                <td>
-                    <h2>4</h2>
                 </td>
             </div>
             <table>
@@ -186,9 +175,9 @@
                         são uma porta de entrada para experiências únicas!</td>
                 </tr>
             </table>
-            <a href="#" class="btnlink">
+            <a href="/routes/Servicos/servicos.html" class="btnlink">
                 <button class="seemorebtn">
-                    Veja Mais
+                    Saiba Mais
                 </button>
             </a>
         </div>
@@ -209,7 +198,8 @@
                             <h1>Quem Somos?</h1>
                             <p>
                                 A AzorSea Adventures, é uma empresa que está em operação há vários anos em Portugal.
-                                Esta é liderada por Filipe e conta com mais dois membros dedicados. A nossa equipa é
+                                Esta é liderada por Filipe e conta com mais dois membros dedicados. <br> <br> A nossa
+                                equipa é
                                 apaixonada pelo mar, proporcionando emocionantes aventuras aquáticas para explorar as
                                 maravilhas do oceano em terras lusas.</p>
                         </td>
@@ -218,7 +208,7 @@
             </div>
             <div class="aboutus-btn-wrapper">
                 <a href="#">
-                    <Button class="seemorebtn aboutus-btn">See More</Button></a>
+                    <Button class="seemorebtn aboutus-btn">Saiba Mais</Button></a>
             </div>
         </div>
     </div>
@@ -229,49 +219,27 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.52452497255103!2d-25.429960354886877!3d37.715072298573325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb5d2660f0cd7af7%3A0xa17f2efe09a987aa!2sAzorsea%20Adventures%20Lic.MT%209%2F2015!5e0!3m2!1spt-PT!2spt!4v1697545038026!5m2!1spt-PT!2spt"
                     width="600" height="450" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div>
-            <td></td>
-        </div>
-        <table>
-            <tr>
-                <td>
-                    <h2>Localização AzorSea</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Morada: Rua da Boa Nova 6, Ponta Delgada</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Código Postal: 9500-296</h3>
-                </td>
-            </tr>
-        </table>
-    </div>
-    </div>
-    <!-- Starting latest info box for e-mail notices -->
-    <div class="latest-info-box">
-        <div class="info-text">
-            <h2>Obtenha as últimas novidades!</h2>
-            <div class="cloudflare-icon">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Seu endereço de e-mail">
-
-                <a href="#"><img src="/images/next.png" alt="next" width="30px"></a>
-            </div>
-        </div>
-        <div class="terms-privacy">
-            <label>
-                <input type="checkbox"> Li e aceito os <a href="#">Termos e Condições</a> e a <a href="#">Política de
-                    Privacidade</a>
-            </label>
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Localização AzorSea</h2>
+                        </td>
+                    </tr>
+                        <td>
+                            <h3>Morada: Rua da Boa Nova 6, Ponta Delgada</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Código Postal: 9500-296</h3>
+                        </td>
+                    </tr>
+                </table>
         </div>
     </div>
 
     <div class="partners">
-        <div class="container">
+        <div class="container-intro">
             <img src="/images/logo.png" alt="" width="200px">
             <p>A Azorsea Adventures oferece uma experiência excepcional
                 em passeios marítimos e pesca desportiva, fruto da nossa
@@ -286,23 +254,23 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="service1.html">Passeios de Barco</a></td>
+                    <td><a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html">Passeios de Barco</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service2.html">Pesca de Fundo</a></td>
+                    <td><a href="/routes/Servicos/PescadeFundo/pescadefundo.html">Pesca de Fundo</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service3.html">Corrico de Costa</a></td>
+                    <td><a href="/routes/Servicos/CorricodeCosta/corrico.html">Corrico de Costa</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service4.html">Mergulho</a></td>
+                    <td><a href="/routes/Servicos/Mergulho/mergulho.html">Mergulho</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service5.html">Big Game Fishing</a></td>
+                    <td><a href="/routes/Servicos/BigGameFishing/biggamefishing.html">Big Game Fishing</a></td>
                 </tr>
             </table>
         </div>
-        <div class="container links">
+        <div class="container-links">
             <table>
                 <tr>
                     <td>

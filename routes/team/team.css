@@ -22,7 +22,7 @@ body {
     justify-content: center;
     width: fit-content;
     height: 5%;
-    background-color: rgba(22, 23, 150, 0.6);
+    background-color: rgb(255,231,21);
     margin: 5px;
     border-radius: 25px;
     overflow: hidden;
@@ -30,24 +30,22 @@ body {
     border: 2px solid rgb(255, 255, 255);
 }
 
+
 /* TODO: Possibly reshape the colors and add some extra smoothness to the animations, if possible also recolour the style, looks kinda boring. */
 .home {
     text-decoration: none;
-    color: white;
     padding: 5px;
     margin: 10px;
     width: fit-content;
     max-height: fit-content;
 }
 
-.home:hover {
-    margin: 10px;
-    color: rgb(250, 250, 111);
+.home a:hover {
     padding: 5px;
     border-radius: 25px;
-    border: 2px solid rgb(240, 228, 86);
+    border: 2px solid rgb(16,25,32);
     max-height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(16,25,32);
 }
 
 .about {
@@ -59,14 +57,12 @@ body {
     max-height: fit-content;
 }
 
-.about:hover {
-    margin: 10px;
-    color: rgb(250, 250, 111);
+.about a:hover {
     padding: 5px;
     border-radius: 25px;
-    border: 2px solid rgb(240, 228, 86);
+    border: 2px solid rgb(16,25,32);
     max-height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(16,25,32);
 }
 
 .services {
@@ -78,14 +74,12 @@ body {
     max-height: fit-content;
 }
 
-.services:hover {
-    margin: 10px;
-    color: rgb(250, 250, 111);
+.services a:hover {
     padding: 5px;
     border-radius: 25px;
-    border: 2px solid rgb(240, 228, 86);
+    border: 2px solid rgb(16,25,32);
     max-height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(16,25,32);
 }
 
 .preco {
@@ -97,14 +91,20 @@ body {
     max-height: fit-content;
 }
 
-.preco:hover {
-    margin: 10px;
-    color: rgb(250, 250, 111);
+.preco a:hover {
     padding: 5px;
     border-radius: 25px;
-    border: 2px solid rgb(240, 228, 86);
+    border: 2px solid rgb(16,25,32);
     max-height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(16,25,32);
+}
+
+.home a,
+.about a,
+.services a,
+.equipa a,
+.blog a{
+    color: rgb(16,25,32);
 }
 
 .equipa {
@@ -116,14 +116,12 @@ body {
     max-height: fit-content;
 }
 
-.equipa:hover {
-    margin: 10px;
-    color: rgb(250, 250, 111);
+.equipa a:hover {
     padding: 5px;
     border-radius: 25px;
-    border: 2px solid rgb(240, 228, 86);
+    border: 2px solid rgb(16,25,32);
     max-height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(16,25,32);
 }
 
 .blog {
@@ -135,21 +133,18 @@ body {
     max-height: fit-content;
 }
 
-.blog:hover {
-    margin: 10px;
-    color: rgb(250, 250, 111);
+.blog a:hover {
     padding: 5px;
     border-radius: 25px;
-    border: 2px solid rgb(240, 228, 86);
+    border: 2px solid rgb(16,25,32);
     max-height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(16,25,32);
 }
-
 /* Styling topnav for Mobile / Hamburguer Menu (default hidden) */
 /* Style the navigation menu */
 .topnav-m {
     overflow: hidden;
-    background-color: rgba(22, 23, 150, 0.6);
+    background-color: rgb(255,231,21);
     position: relative;
     display: none;
 }
@@ -172,17 +167,31 @@ body {
     transition: 0.3s;
 }
 
+#myLinks{
+    background-color: rgb(16,25,32);
+    color: white;
+    border-radius: 1px 1px 5px 5px;
+}
+
+.mobile-links a{
+    border-radius: 5px;
+}
+
 /* Style the hamburger menu */
 .topnav-m .icon{
-    background: rgba(22, 23, 150, 0.6);
-    display: block;
+    background: rgb(16,25,32);
+    display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     right: 5px;
     top: 5px;
     transition: 0.3s;
     text-decoration: none;
     color: white;
     border-radius: 5px;
+    width: 40px;
+    height: 40px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -192,17 +201,11 @@ body {
     transition: 0.3s;
 }
 
-/* Style the active link (or home/logo) */
-.active-m {
-    background-color: #04AA6D;
-    color: white;
-}
-
 @media(max-width: 900px) {
     .topnav-m {
         display: block;
         width: 100%;
-        border-radius: 5px;
+        border-radius: 0 0 5px 5px;
     }
 
     .wrap {
@@ -244,13 +247,6 @@ body {
     background-size: cover;
 }
 
-.main-content {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.9);
-}
-
 /* End of main page content */
 
 /* Start of Maps Styling */
@@ -259,14 +255,13 @@ body {
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
-
     /* Align the content at the top */
 }
 
 iframe {
     border-radius: 25px;
     justify-content: center;
-    border: 2px solid rgb(240, 228, 86);
+    border: 2px solid rgb(255,231,21);
 }
 
 body {
@@ -276,7 +271,6 @@ body {
 
 .maps {
     overflow: hidden;
-
     display: flex;
     justify-content: left;
     height: 450px;
@@ -289,23 +283,30 @@ body {
     color: white;
     padding: 10px;
     max-height: 40px;
+    margin: 20px;
+    font-size: 25px;
 }
 
 .maps h3 {
     color: white;
-    padding: 10px;
     max-height: 40px;
+    padding-bottom: 25px;
+    padding-left: 15px;
 }
 
 .maps table {
-    max-height: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    border: 2px solid rgba(245, 222, 179, 0.8);
-    background-color: rgba(63, 91, 252, 0.8);
+    border: 2px solid rgb(255,231,21);
+    background-color: rgb(16,25,32);
     padding: 5px;
     margin-left: 20px;
     border-radius: 25px;
     max-width: 33%;
+    max-height: fit-content;
+    height: 40%;
+}
+
+.maps h3{
+    margin: 10px;
 }
 
 @media (max-width: 950px) {
@@ -315,6 +316,9 @@ body {
     }
 
     .maps table {
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
         max-width: 100%;
     }
 }
@@ -330,22 +334,19 @@ body {
 }
 
 /* Styling for individual table containers */
-.tablecontainer1,
-.tablecontainer2,
-.tablecontainer3 {
+.tablecontainer{
     display: flex;
     flex-direction: column;
     border-radius: 25px;
     /* Yellow-ish tone */
-    padding: 10px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(16,25,32);
+    border: 2px solid rgb(255,231,21);
     max-width: 20%;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
     letter-spacing: .5px;
     line-height: 150%;
+    padding: 20px 10px 20px 20px;
 }
 
 /* Existing styles for .tablecontainer4 */
@@ -353,24 +354,23 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgba(22, 23, 150, 0.8);
-    border: 2px solid rgb(255, 255, 255);
+    color: rgb(16,25,32);
+    background-color: rgb(255,231,21);
+    border: 2px solid rgb(16,25,32);
     width: 30%;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
     position: relative;
     letter-spacing: .5px;
     line-height: 150%;
+    padding: 20px 0 20px 20px;
     /* Add this line */
 }
 
 /* Style for the "See More" button */
 .tablecontainer4 .seemorebtn {
-    background-color: rgba(22, 23, 150, 0.8);
-    border: 2px solid rgba(245, 222, 179, 0.8);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255,231,21);
+    border: 2px solid rgb(16,25,32);
+    color: rgb(16,25,32);
     position: absolute;
     bottom: 10px;
     /* Adjust this value to your desired vertical position */
@@ -381,25 +381,6 @@ body {
     border-radius: 25px;
     border-radius: 4px 4px 4px 4px;
     cursor: pointer;
-}
-
-/* Style for heading inside table containers */
-.tablecontainer1 h2,
-.tablecontainer2 h2,
-.tablecontainer3 h2 {
-    color: rgb(256, 204, 4);
-    text-align: center;
-    font-size: 44px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 10px;
-}
-
-.tablecontainer4 h2 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 44px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 10px;
 }
 
 @media (max-width: 1900px) {
@@ -420,19 +401,16 @@ body {
         padding: 10px;
     }
 
-    .tablecontainer1,
-    .tablecontainer2,
-    .tablecontainer3,
-    .tablecontainer4 {
-        margin-bottom: 5px;
+    .tablecontainer, .tablecontainer4{
+        margin-bottom: 40px;
         justify-content: space-between;
         max-width: 100%;
         width: 100%;
     }
 
     .tablecontainer4 .seemorebtn {
+        max-height: 12%;
         height: 17%;
-        max-width: 17%;
     }
 
     .tablecontainer4 .btnlink {
@@ -442,38 +420,11 @@ body {
 
 
 /* Bug Fixing (rename after due to cleaning purpouses) */
-.iconwrap1 {
+.iconwrap {
     display: flex;
     justify-content: space-between;
-    margin-right: 20px;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    margin: 20px 0 20px 20px;
 }
-
-.iconwrap2 {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-.iconwrap3 {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-.iconwrap4 {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
 
 
 .seemorebtn {
@@ -482,14 +433,14 @@ body {
     display: inline-block;
     font-size: 16px;
     transition: 0.3s;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.seemorebtn:hover {
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: inline-block;
-    color: black;
+.seemorebtn:hover{
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(16,25,32);
+    max-height: fit-content;
+    color: rgb(16,25,32);
 }
 
 /* About Us */
@@ -503,8 +454,9 @@ body {
     /* Center vertically */
     margin: 20px auto;
     /* Add margin for separation from the wall and auto for centering */
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(16,25,32);
     border-radius: 5px;
+    border: 2px solid rgb(255,231,21);
     /* Add border radius here */
 }
 
@@ -525,7 +477,6 @@ body {
     display: flex;
     padding-left: 10px;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: fit-content;
     margin-right: 5px;
 }
@@ -534,15 +485,18 @@ body {
     height: fit-content;
     margin: 0;
     font-size: 60px;
-    color: rgb(255, 255, 255);
+    color: white;
     margin-bottom: 25px;
+    padding: 10px 0 0 20px;
 }
 
 .aboutus-table-wrap p {
     height: auto;
     margin: 0;
-    color: rgb(213, 213, 213);
+    color: white;
     font-size: 20px;
+    padding: 10px 0 0 20px;
+
     /* You can adjust this as needed */
 }
 
@@ -559,9 +513,9 @@ body {
 }
 
 .aboutus-btn {
-    background-color: hsla(48, 100%, 70%, 0.8);
-    border: 2px solid rgba(245, 222, 179, 0.8);
-    color: black;
+    background-color: rgb(16,25,32);
+    border: 2px solid rgb(255,231,21);
+    color: white;
     width: 100px;
     /* Adjust the width as needed */
     height: 40px;
@@ -663,101 +617,4 @@ body {
 .terms-privacy a {
     text-decoration: none;
     color: white;
-}
-
-/* Starting partners section styling */
-.partners {
-    margin-top: 30px;
-    width: 100%;
-    background-color: rgba(22, 23, 150, 0.7);
-    ;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    /* Use flexbox to create a horizontal layout */
-}
-
-.container,
-.container-services,
-.container-links,
-.container-contacts {
-    padding: 20px;
-    width: 25%;
-    /* Each container occupies 25% of the width */
-    color: white;
-}
-
-.container h2,
-.container-services h2,
-.container-links h2,
-.container-contacts h2 {
-    color: white;
-}
-
-.partners a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    padding: 5px;
-    transition: 0.3s;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.partners a:hover {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: inline-block;
-    color: rgb(255, 234, 0);
-    font-weight: bold;
-}
-
-
-.partners p {
-    height: auto;
-    margin: 10px;
-    color: rgb(213, 213, 213);
-    font-size: 20px;
-    /* You can adjust this as needed */
-}
-
-.copyrightlogos {
-    background-color: rgb(255, 234, 0);
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    text-align: center;
-    /* Center text content */
-}
-
-.copyrightlogos img {
-    width: 50%;
-    max-width: 100%;
-    /* Ensure the image doesn't exceed its container */
-}
-
-@media (max-width: 900px) {
-
-    .partners {
-        display: block;
-    }
-
-    .container,
-    .container-services,
-    .container-links,
-    .container-contacts {
-        padding: 20px;
-        width: 100%;
-        /* Each container occupies 25% of the width */
-        color: white;
-    }
-    .copyrightlogos img{
-        width: 150px;
-        max-width: 250px;
-    }
 }

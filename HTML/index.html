@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../JS/main.js"></script>
     <title>AzorSeaAdventures</title>
 </head>
 
 <body>
-    <!-- We use wrap for centering our topnav -->
+    <!-- Wrap for centering navbar -->
     <div class="wrap">
-        <!-- topnav is used as a container for the sections -->
+        <!-- Topnav for PC -->
         <div class="topnav" id="topnavId">
 
-            <a href="index.html"><img src="../images/logo.png" width="210px" height="50px" ;></a>
+            <a href="#"><img src="/images/logo.png" width="210px" height="50px" ;></a>
             <!-- Home Section aka Main Page Navigation Section -->
             <div class="home">
-                <a href="#">Home</a>
+                <a href="/HTML/index.html">Home</a>
             </div>
             <!-- About Section -->
             <div class="about">
@@ -27,7 +27,7 @@
             </div>
             <!-- Services Section -->
             <div class="services">
-                <a href="../routes/Servicos/servicos.html">Serviços</a>
+                <a href="/routes/Servicos/servicos.html">Serviços</a>
             </div>
             <!-- Pricing Section -->
             <div class="equipa">
@@ -39,6 +39,45 @@
         </div>
     </div>
     <!-- End of wrap -->
+
+    <!-- Topnav for Mobile -->
+    <!-- Top Navigation Menu -->
+    <div class="topnav-m">
+        <img src="/images/logo.png" alt="">
+        <!-- Navigation links (hidden by default) -->
+        <div class="mobile-links" id="myLinks">
+            <a href="/HTML/index.html">Home</a>
+            <a href="/routes/about-us/aboutus.html">Sobre Nós</a>
+            <a href="/routes/Servicos/servicos.html">Serviços</a>
+            <a href="/routes/team/team.html">Equipa</a>
+            <a href="#about">Blog</a>
+        </div>
+        <!-- Hamburguer Menu Script -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Script to make hamburguer work -->
+    <script>
+        myFunction();
+        myFunction();
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var burguerDrop = document.getElementById("myLinks");
+            if (burguerDrop.style.maxHeight === "0px") {
+                burguerDrop.style.display = "block";
+                burguerDrop.style.transition = "max-height 2s ease"; // Add a 2-second transition
+                burguerDrop.style.maxHeight = "1000px"; // Change max-height to reveal the links
+            } else {
+                burguerDrop.style.transition = "max-height 0.3s ease"; // Add a 0.3-second transition for closing
+                burguerDrop.style.maxHeight = "0px"; // Change max-height to hide the links
+            }
+        }
+        myFunction();
+    </script>
+    <!-- End of Topnav for Mobile -->
+
     <!-- Slideshow container -->
     <div class="fogwrapper">
         <div class="slideshow-container">
@@ -105,39 +144,10 @@
             </div>
         </div>
     </div>
-    <!-- Googgle Maps Section -->
-    <div class="map-container">
-        <div class="maps">
-            <td><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.52452497255103!2d-25.429960354886877!3d37.715072298573325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb5d2660f0cd7af7%3A0xa17f2efe09a987aa!2sAzorsea%20Adventures%20Lic.MT%209%2F2015!5e0!3m2!1spt-PT!2spt!4v1697545038026!5m2!1spt-PT!2spt"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div>
-            <td></td>
-        </div>
-        <table>
-            <tr>
-                <td>
-                    <h2>Localização AzorSea Adventures</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Morada: Rua Eng.º Manuel António Martins Mota s/n Marina da, 9680-909 Vila Franca Do Campo</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Código Postal: 9500-296</h3>
-                </td>
-            </tr>
-        </table>
-    </div>
-    </div>
 
     <div class="partners">
-        <div class="container">
-            <img src="../images/logo.png" alt="" width="200px">
+        <div class="container-intro">
+            <img src="/images/logo.png" alt="" width="200px">
             <p>A Azorsea Adventures oferece uma experiência excepcional
                 em passeios marítimos e pesca desportiva, fruto da nossa
                 vasta experiência e profundo conhecimento dos locais ideais
@@ -151,23 +161,23 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="service1.html">Passeios de Barco</a></td>
+                    <td><a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html">Passeios de Barco</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service2.html">Pesca de Fundo</a></td>
+                    <td><a href="/routes/Servicos/PescadeFundo/pescadefundo.html">Pesca de Fundo</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service3.html">Corrico de Costa</a></td>
+                    <td><a href="/routes/Servicos/CorricodeCosta/corrico.html">Corrico de Costa</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service4.html">Mergulho</a></td>
+                    <td><a href="/routes/Servicos/Mergulho/mergulho.html">Mergulho</a></td>
                 </tr>
                 <tr>
-                    <td><a href="service5.html">Big Game Fishing</a></td>
+                    <td><a href="/routes/Servicos/BigGameFishing/biggamefishing.html">Big Game Fishing</a></td>
                 </tr>
             </table>
         </div>
-        <div class="container links">
+        <div class="container-links">
             <table>
                 <tr>
                     <td>
@@ -202,9 +212,10 @@
                     <td>Morada: R. da Boa Nova 6, 9500-296 Ponta Delgada</td>
                 </tr>
                 <tr>
-                    <td>Redes Sociais   
+                    <td>Redes Sociais
                         <!-- Add font awesome icons -->
-                        <a href="https://www.facebook.com/azorseaadventures" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        <a href="https://www.facebook.com/azorseaadventures" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="1em"
                                 viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path
                                     d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
@@ -213,6 +224,23 @@
                 </tr>
             </table>
         </div>
+    </div>
+
+    <div class="copyrightlogos">
+        <img src="/images/logo.png" usemap="#image-map">
+
+        <map name="image-map">
+            <!--
+            <area target="" alt="Açores 2020" title="Açores 2020" href="http://poacores2020.azores.gov.pt/"
+                coords="1,0,648,183" shape="rect">
+            <area target="" alt="Governo dos Açores" title="Governo dos Açores" href="https://portal.azores.gov.pt/"
+                coords="655,2,1439,183" shape="rect">
+            <area target="" alt="Portugal 2020" title="Portugal 2020" href="https://portugal2020.pt/"
+                coords="1439,0,2033,183" shape="rect">
+            <area target="" alt="União Europeia" title="União Europeia" href="https://european-union.europa.eu/index_pt"
+                coords="2036,2,2696,183" shape="rect">-->
+        </map>
+        <p>Copyright © 2023 AzorSea Adventures. Todos os direitos reservados.</p>
     </div>
 
     <!-- Script for Auto loading slides + changing the current active dot -->
