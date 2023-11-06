@@ -353,7 +353,7 @@ body {
 .tablecontainer4 {
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 5px;
     color: rgb(16,25,32);
     background-color: rgb(255,231,21);
     border: 2px solid rgb(16,25,32);
@@ -365,6 +365,8 @@ body {
     padding: 20px 0 20px 20px;
     /* Add this line */
 }
+
+
 
 /* Style for the "See More" button */
 .tablecontainer4 .seemorebtn {
@@ -378,11 +380,16 @@ body {
     /* Adjust this value to your desired horizontal position */
     width: 25%;
     height: 12%;
-    border-radius: 25px;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
-
+.tablecontainer4 .seemorebtn:hover{
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(16,25,32);
+    max-height: fit-content;
+    color: rgb(16,25,32);
+}
 @media (max-width: 1900px) {
     .tablecontainer4 .seemorebtn {
         height: 9%;
@@ -438,9 +445,9 @@ body {
 .seemorebtn:hover{
     padding: 5px;
     border-radius: 25px;
-    border: 2px solid rgb(16,25,32);
+    border: 2px solid rgb(255,231,21);
     max-height: fit-content;
-    color: rgb(16,25,32);
+    color: rgb(255, 255, 255);
 }
 
 /* About Us */

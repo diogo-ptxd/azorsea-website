@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzorSea Adventures</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="carouselStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Wrap for centering navbar -->
+    <div class="wrap">
+        <!-- Topnav for PC -->
+        <div class="topnav" id="topnavId">
+
+            <a href="#"><img src="/images/logo.png" width="210px" height="50px" ;></a>
+            <!-- Home Section aka Main Page Navigation Section -->
+            <div class="home">
+                <a href="/HTML/index.html">Home</a>
+            </div>
+            <!-- About Section -->
+            <div class="about">
+                <a href="/routes/about-us/aboutus.html">Sobre Nós</a>
+            </div>
+            <!-- Services Section -->
+            <div class="services">
+                <a href="/routes/Servicos/servicos.html">Serviços</a>
+            </div>
+            <!-- Pricing Section -->
+            <div class="equipa">
+                <a href="/routes/team/team.html">Equipa</a>
+            </div>
+            <div class="blog">
+                <a href="#">Blog</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of wrap -->
+
+    <!-- Topnav for Mobile -->
+    <!-- Top Navigation Menu -->
+    <div class="topnav-m">
+        <img src="/images/logo.png" alt="">
+        <!-- Navigation links (hidden by default) -->
+        <div class="mobile-links" id="myLinks">
+            <a href="/HTML/index.html">Home</a>
+            <a href="/routes/about-us/aboutus.html">Sobre Nós</a>
+            <a href="/routes/Servicos/servicos.html">Serviços</a>
+            <a href="/routes/team/team.html">Equipa</a>
+            <a href="#about">Blog</a>
+        </div>
+        <!-- Hamburguer Menu Script -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Script to make hamburguer work -->
+    <script>
+        myFunction();
+        myFunction();
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var burguerDrop = document.getElementById("myLinks");
+            if (burguerDrop.style.maxHeight === "0px") {
+                burguerDrop.style.display = "block";
+                burguerDrop.style.transition = "max-height 2s ease"; // Add a 2-second transition
+                burguerDrop.style.maxHeight = "1000px"; // Change max-height to reveal the links
+            } else {
+                burguerDrop.style.transition = "max-height 0.3s ease"; // Add a 0.3-second transition for closing
+                burguerDrop.style.maxHeight = "0px"; // Change max-height to hide the links
+            }
+        }
+        myFunction();
+    </script>
+    <!-- End of Topnav for Mobile -->
+    <div class="container">
+        <div id="slide">
+            <div class="item image" style="background-image: url(/images/azorpeixe.jpg);">
+                <div class="content">
+                    <div class="name">Big Game Fishing</div>
+                    <div class="info">Big Game Fishing é uma das atividades mais icónicas da AzorSea Adventures</div>
+                    <a href="/routes/Servicos/BigGameFishing/biggamefishing.html"><button>Saiba Mais</button></a>
+                </div>
+            </div>
+            <div class="item image" style="background-image: url(/images/azorsea.jpg);">
+                <div class="content">
+                    <div class="name">Corrico de Costa</div>
+                    <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures</div>
+                    <a href="/routes/Servicos/CorricodeCosta/corrico.html"><button>Saiba Mais</button></a>
+
+                </div>
+            </div>
+            <div class="item image" style="background-image: url(/images/passeiodebarco.jpg);">
+                <div class="content">
+                    <div class="name">Pesca de Fundo</div>
+                    <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures</div>
+                    <a href="/routes/Servicos/PescadeFundo/pescadefundo.html"><button>Saiba Mais</button></a>
+
+                </div>
+            </div>
+            <div class="item image" style="background-image: url(/images/azorsea_smiguel.jpg);">
+                <div class="content">
+                    <div class="name">Passeios de Barco</div>
+                    <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures</div>
+                    <a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html"><button>Saiba Mais</button></a>
+
+                </div>
+            </div>
+            <div class="item image" style="background-image: url(/images/passeiodebarco3.jpg);">
+                <div class="content">
+                    <div class="name">Mergulho</div>
+                    <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures</div>
+                    <a href="/routes/Servicos/Mergulho/mergulho.html"><button>Saiba Mais</button></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script src="carousel.js"></script>
+
+    <div class="partners">
+        <div class="container-intro">
+            <img src="/images/logo.png" alt="" width="200px">
+            <p>A Azorsea Adventures oferece uma experiência excepcional
+                em passeios marítimos e pesca desportiva, fruto da nossa
+                vasta experiência e profundo conhecimento dos locais ideais
+                para viagens junto à costa e inesquecíveis pôres do sol em alto-mar.</p>
+        </div>
+        <div class="container-services">
+            <table>
+                <tr>
+                    <td>
+                        <h2><strong>Serviços</strong></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html">Passeios de Barco</a></td>
+                </tr>
+                <tr>
+                    <td><a href="/routes/Servicos/PescadeFundo/pescadefundo.html">Pesca de Fundo</a></td>
+                </tr>
+                <tr>
+                    <td><a href="/routes/Servicos/CorricodeCosta/corrico.html">Corrico de Costa</a></td>
+                </tr>
+                <tr>
+                    <td><a href="/routes/Servicos/Mergulho/mergulho.html">Mergulho</a></td>
+                </tr>
+                <tr>
+                    <td><a href="/routes/Servicos/BigGameFishing/biggamefishing.html">Big Game Fishing</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container-links">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Links Úteis</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="terms.html">Termos e Condições</a></td>
+                </tr>
+                <tr>
+                    <td><a href="privacy.html">Política de Privacidade</a></td>
+                </tr>
+                <tr>
+                    <td><a href="complaints.html">Livro de Reclamações</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container-contacts">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Contactos</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email: <a href="mailto:azorseaadventures@gmail.com">azorseaadventures@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Contacto: <a href="tel:962413948">+351 962 413 948</a></td>
+                </tr>
+                <tr>
+                    <td>Morada: R. da Boa Nova 6, 9500-296 Ponta Delgada</td>
+                </tr>
+                <tr>
+                    <td>Redes Sociais
+                        <!-- Add font awesome icons -->
+                        <a href="https://www.facebook.com/azorseaadventures" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                            </svg></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="copyrightlogos">
+        <img src="/images/logo.png" usemap="#image-map">
+
+        <map name="image-map">
+            <!--
+            <area target="" alt="Açores 2020" title="Açores 2020" href="http://poacores2020.azores.gov.pt/"
+                coords="1,0,648,183" shape="rect">
+            <area target="" alt="Governo dos Açores" title="Governo dos Açores" href="https://portal.azores.gov.pt/"
+                coords="655,2,1439,183" shape="rect">
+            <area target="" alt="Portugal 2020" title="Portugal 2020" href="https://portugal2020.pt/"
+                coords="1439,0,2033,183" shape="rect">
+            <area target="" alt="União Europeia" title="União Europeia" href="https://european-union.europa.eu/index_pt"
+                coords="2036,2,2696,183" shape="rect">-->
+        </map>
+        <p>Copyright © 2023 AzorSea Adventures. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
