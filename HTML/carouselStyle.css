@@ -2,10 +2,20 @@ body{
     background-color: rgb(16,25,32);
     overflow-x: hidden;
 }
-.container{
-    position: absolute;
-    left:50%;
-    top:50%;
+
+.container-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    float: right;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 50%;
+}
+
+.container-slider{
+    position: block;
     transform: translate(-50%,-50%);
     width:1000px;
     height:600px;
@@ -19,15 +29,15 @@ body{
     margin-top:50px;
 }
 .item{
-    width:200px;
-    height:300px;
+    width:150px;
+    height:250px;
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.5s;
     background-size: cover;
     position: absolute;
     z-index: 1;
-    top:50%;
+    top:82.1%;
     transform: translate(0,-50%);
     border-radius: 15px;
     box-shadow:  0 30px 50px rgb(255,231,21);
@@ -57,16 +67,16 @@ body{
 }
 
 .item:nth-child(3){
-    left:50%;
+    left:calc(50% + 330px);
 }
 .item:nth-child(4){
-    left:calc(50% + 220px);
+    left:calc(50% + 490px);
 }
 .item:nth-child(5){
-    left:calc(50% + 440px);
+    left:calc(50% + 650px);
 }
 .item:nth-child(n+6){
-    left:calc(50% + 660px);
+    left:calc(50% + 880px);
     opacity: 0;
 }
 
@@ -150,8 +160,67 @@ body{
     margin-top: 900px;
 }
 
+@media(max-width: 1700px){
+    .container-slider{
+        margin-top: 200px;
+    }
+}
+
+@media(max-width: 1200px){
+    .container-slider{
+        margin-top: 300px;
+    }
+
+    .item:nth-child(3){
+        left:calc(50% + 310px);
+    }
+    .item:nth-child(4){
+        left:calc(50% + 480px);
+    }
+    .item:nth-child(5){
+        left:calc(50% + 640px);
+    }
+    .item:nth-child(n+6){
+        left:calc(50% + 880px);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 1100px){
+    .container-slider{
+        margin-top: 300px;
+    }
+
+    .item:nth-child(3){
+        left:calc(50% + 290px);
+    }
+    .item:nth-child(4){
+        left:calc(50% + 460px);
+    }
+    .item:nth-child(5){
+        left:calc(50% + 610px);
+    }
+    .item:nth-child(n+6){
+        left:calc(50% + 880px);
+        opacity: 0;
+    }
+}
+
 @media(max-width: 900px){
-    .container{
-        margin-top: 250px;
+    .container-slider{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .item{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-wrap{
+        margin: 0;
+        padding: 0;
+        display: none;
     }
 }

@@ -139,6 +139,7 @@ body {
     border: 2px solid rgb(16,25,32);
     max-height: fit-content;
     color: rgb(16,25,32);
+    
 }
 
 /* In order to not constantly repeat the font family,
@@ -146,11 +147,15 @@ body {
 
 .slideshow-container a,
 .topnav a {
-    color: rgb(16,25,32);
+    color: white;
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.topnav a{
+    color: rgb(16,25,32);
 }
 
 .slideshow-container a:hover,
@@ -259,6 +264,7 @@ body {
 .mySlides {
     display: none;
     background-attachment: fixed;
+    
 }
 
 /* Caption text */
@@ -311,6 +317,8 @@ body {
     pointer-events: none;
     max-height: 100%;
     overflow: hidden;
+    opacity: 70%;
+
 }
 
 /* -------------------------------------------- Scroll Bar ------------------------------------ */
