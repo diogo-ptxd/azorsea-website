@@ -464,17 +464,36 @@ body {
         order: 2;
     }
     .seemorebtn{
-        position: absolute;
         bottom: 0;
         margin-left: 10px;
     }
 }
 @media(max-width: 1400px){
     .seemorebtn{
-        position: absolute;
         bottom: 20px;
         margin-left: 10px;
     }
+}
+@media(max-width: 1000px){
+    .aboutuswrap{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutus{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .aboutus-table-wrap{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /* End of about us styling */
@@ -518,6 +537,59 @@ body {
 .product h1{
     padding-top: 10px;
 }
+
+@media(max-width:1520px){
+    .products-main-wrapper{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
+    }
+    .products-wrapper{
+        display: block;
+    }
+
+    .product{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:1200px){
+    .product{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .product img{
+        max-width: 100%;
+        height: fit-content;
+    }
+}
+
+@media(max-width: 900px){
+    .products-main-wrapper{
+        width: 70%;
+    }
+}
+
+@media(max-width: 700px){
+    .products-main-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 500px){
+.products-wrapper{
+    width: 100%;
+}
+    .products-main-wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 
 /* -------------------------------------------- Client Reviews ------------------------------------ */
 
@@ -582,7 +654,14 @@ body {
     margin-top: 20px;
 }
 
-
+@media(max-width: 1280px){
+    .review-container{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+}
 
 
 
