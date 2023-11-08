@@ -11,7 +11,7 @@
     /* Adjust the margin value to control the space between service cards */
     background-color: rgb(16,25,32);
     border: 2px solid rgb(255,231,21);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 2px;
     max-width: 60%;
     margin: 0 auto;
@@ -48,13 +48,14 @@
     /* Adjust contrast */
     filter: saturate(1.2);
     /* Adjust saturation */
-    border-radius: 5px;
-    border: 2px solid white;
+    border-radius: 15px;
+    border: 2px solid rgb(255,231,21);
     margin: 10px 15px 10px 5px;
     /* bottom right top left */
     justify-content: center;
     /* Center horizontally */
     pointer-events: none;
+    margin: 0 20px 0 20px;
 
 }
 
