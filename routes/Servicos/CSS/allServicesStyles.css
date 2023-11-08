@@ -1,14 +1,16 @@
 /* service card section */
 .card-wrapper{
     display: flex;
+    margin-bottom: 10%;
+    margin-top: 2%;
 }
 
 .service-card {
     display: flex;
     margin-right: 20px;
     /* Adjust the margin value to control the space between service cards */
-    background-color: rgba(0, 70, 128, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    background-color: rgb(16,25,32);
+    border: 2px solid rgb(255,231,21);
     border-radius: 5px;
     padding: 2px;
     max-width: 60%;
@@ -25,15 +27,15 @@
     text-align: center;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(0, 70, 128, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    background-color: rgb(16,25,32);
+    border: 2px solid rgb(255,231,21);
     border-radius: 15px;
     margin-right: 10px;
     color: white;
     width: fit-content;
 }
 .wrapper h2{
-    color: rgb(255, 244, 225);
+    color: white;
 }
 
 .service-card img {
@@ -66,6 +68,7 @@
 }
 
 .price-marker {
+    text-align: center;
     border-radius: 5px;
     background-color: rgb(1, 167, 3);
     /* Red marker background color */
@@ -84,13 +87,15 @@
     padding: 2px;
 }
 .bottom-marker{
-    background-color: red;
+    font-weight: bold;
+    color: rgb(16,25,32);
+    background-color: rgb(255,231,21);
 }
 
 
 .seemorebtn {
-    background-color: rgba(0, 70, 128, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    background-color: rgb(16,25,32);
+    border: 2px solid rgb(255,231,21);
     border-radius: 5px;
     color: white;
     font-size: 18px;
@@ -103,7 +108,7 @@
 }
 
 .service-details {
-    color: rgba(245, 222, 179, 0.9);
+    color: white;
     font-size: 18px;
 }
 
