@@ -118,3 +118,81 @@
     align-items: center;
     /* Center vertically */
 }
+
+
+/* Start of Maps Styling */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 4%;
+    /* Align the content at the top */
+}
+
+iframe {
+    border-radius: 25px;
+    justify-content: center;
+    border: 2px solid rgb(255,231,21);
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+.maps {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    height: 450px;
+    max-width: 100%;
+    /* Height might need adjustments if any layout changes + TODO: Change layout of the maps in the future due to it looking ugly at the moment */
+    /* Add any additional styling for your .maps container below this comment for organizing purposes */
+}
+
+.maps h2 {
+    color: white;
+    padding: 10px;
+    max-height: 40px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.maps h3 {
+    color: white;
+    max-height: 40px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+}
+
+.maps table {
+    border: 2px solid rgb(255,231,21);
+    background-color: rgb(16,25,32);
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 25px;
+    max-width: 33%;
+    max-height: fit-content;
+    height: 40%;
+}
+
+.maps h3{
+    margin: 10px;
+}
+
+@media (max-width: 950px) {
+    .maps {
+        display: block;
+        height: 800px;
+    }
+
+    .maps table {
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
+        max-width: 100%;
+    }
+}
+
+/* End of map styling */

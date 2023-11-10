@@ -255,6 +255,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
+    margin: 4%;
     /* Align the content at the top */
 }
 
