@@ -124,3 +124,16 @@
     align-items: center;
     /* Center vertically */
 }
+
+
+@media(max-width: 900px){
+    .service-card{
+        display: block;
+        max-width: 100%;
+        padding: 20px 15px 15px 15px;
+    }
+    .service-card a{
+        padding: 0;
+        margin-left: -10px;
+    }
+}

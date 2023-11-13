@@ -81,38 +81,6 @@
     </script>
     <!-- End of Topnav for Mobile -->
 
-    <!-- Slideshow container -->
-    <div class="fogwrapper">
-        <div class="slideshow-container">
-
-            <!-- Full-width images with caption text -->
-            <div class="mySlides fade">
-                <img src="../images/pescaAzorSea.jpg" style="width:100%" height="1000px">
-                <div class="text changecol"><a href="#">Pesca</a></div>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../images/azorsea.jpg" style="width:100%" height="1000px">
-                <div class="text"><a href="#">Barco AzorSea</a></div>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../images/azorpeixe.jpg" style="width:100%" height="1000px">
-                <div class="text"><a href="#">Peixe Recentemente Pescado</a></div>
-            </div>
-
-            <!-- Next and previous buttons -->
-        </div>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
 
 
     <!-- About us Section -->
@@ -144,54 +112,75 @@
         </div>
     </div>
 
-    <!-- Main Products Showcase -->
-    <div class="products-main-wrapper">
-        <div class="products-wrapper">
 
-            <div class="product">
-                <h1>Big Game Fishing</h1>
-                <img src="/images/azorpeixe.jpg" alt="">
 
+
+
+
+
+
+
+    <!-- Client Reviews Slider Section  -->
+    <div class="container-wrap">
+        <div class="container-slider">
+            <div id="slide">
+                <div class="item image" style="background-image: url(/images/azorpeixe.jpg);">
+                    <div class="content">
+                        <div class="name">Big Game Fishing</div>
+                        <div class="info">Big Game Fishing é uma das atividades mais icónicas da AzorSea Adventures
+                        </div>
+                        <a href="/routes/Servicos/BigGameFishing/biggamefishing.html"><button>Saiba
+                                Mais</button></a>
+                    </div>
+                </div>
+                <div class="item image" style="background-image: url(/images/azorsea.jpg);">
+                    <div class="content">
+                        <div class="name">Corrico de Costa</div>
+                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
+                        </div>
+                        <a href="/routes/Servicos/CorricodeCosta/corrico.html"><button>Saiba Mais</button></a>
+
+                    </div>
+                </div>
+                <div class="item image" style="background-image: url(/images/passeiodebarco.jpg);">
+                    <div class="content">
+                        <div class="name">Pesca de Fundo</div>
+                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
+                        </div>
+                        <a href="/routes/Servicos/PescadeFundo/pescadefundo.html"><button>Saiba Mais</button></a>
+
+                    </div>
+                </div>
+                <div class="item image" style="background-image: url(/images/azorsea_smiguel.jpg);">
+                    <div class="content">
+                        <div class="name">Passeios de Barco</div>
+                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
+                        </div>
+                        <a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html"><button>Saiba
+                                Mais</button></a>
+
+                    </div>
+                </div>
+                <div class="item image" style="background-image: url(/images/passeiodebarco3.jpg);">
+                    <div class="content">
+                        <div class="name">Mergulho</div>
+                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
+                        </div>
+                        <a href="/routes/Servicos/Mergulho/mergulho.html"><button>Saiba Mais</button></a>
+
+                    </div>
+                </div>
             </div>
-
-            <div class="product">
-                <h1>Pesca de Fundo</h1>
-                <img src="/images/azorsea.jpg" alt="">
-            </div>
-
-            <div class="product">
-                <h1>Passeios de Barco</h1>
-                <img src="/images/passeiodebarco3.jpg" alt="">
-
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
             </div>
         </div>
     </div>
+    <script src="carousel.js"></script>
 
-    <!-- Client Reviews Section  -->
+    <!-- Review Slider -->
 
-    <div class="review-container">
-        <div class="review">
-            <img src="/images/azorsea_smiguel.jpg" alt="Client Review Image">
-            <div class="review-content">
-                <div class="blur-bg"></div>
-                <p class="quote">"Fantastic service! I highly recommend it."</p>
-            </div>
-        </div>
-        <div class="review">
-            <img src="/images/passeiodebarco3.jpg" alt="Client Review Image">
-            <div class="review-content">
-                <div class="blur-bg"></div>
-                <p class="quote">"Outstanding experience with this team."</p>
-            </div>
-        </div>
-        <div class="review">
-            <img src="/images/passeiodebarco2.jpg" alt="Client Review Image">
-            <div class="review-content">
-                <div class="blur-bg"></div>
-                <p class="quote">"The best service I've ever had!"</p>
-            </div>
-        </div>
-    </div>
 
     <div class="slider">
 
@@ -309,72 +298,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-    <!-- Client Reviews Slider Section  -->
-    <div class="container-wrap">
-        <div class="container-slider">
-            <div id="slide">
-                <div class="item image" style="background-image: url(/images/azorpeixe.jpg);">
-                    <div class="content">
-                        <div class="name">Big Game Fishing</div>
-                        <div class="info">Big Game Fishing é uma das atividades mais icónicas da AzorSea Adventures
-                        </div>
-                        <a href="/routes/Servicos/BigGameFishing/biggamefishing.html"><button>Saiba
-                                Mais</button></a>
-                    </div>
-                </div>
-                <div class="item image" style="background-image: url(/images/azorsea.jpg);">
-                    <div class="content">
-                        <div class="name">Corrico de Costa</div>
-                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
-                        </div>
-                        <a href="/routes/Servicos/CorricodeCosta/corrico.html"><button>Saiba Mais</button></a>
-
-                    </div>
-                </div>
-                <div class="item image" style="background-image: url(/images/passeiodebarco.jpg);">
-                    <div class="content">
-                        <div class="name">Pesca de Fundo</div>
-                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
-                        </div>
-                        <a href="/routes/Servicos/PescadeFundo/pescadefundo.html"><button>Saiba Mais</button></a>
-
-                    </div>
-                </div>
-                <div class="item image" style="background-image: url(/images/azorsea_smiguel.jpg);">
-                    <div class="content">
-                        <div class="name">Passeios de Barco</div>
-                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
-                        </div>
-                        <a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html"><button>Saiba
-                                Mais</button></a>
-
-                    </div>
-                </div>
-                <div class="item image" style="background-image: url(/images/passeiodebarco3.jpg);">
-                    <div class="content">
-                        <div class="name">Mergulho</div>
-                        <div class="info">A pesca de fundo é uma das atividades mais icónicas da AzorSea Adventures
-                        </div>
-                        <a href="/routes/Servicos/Mergulho/mergulho.html"><button>Saiba Mais</button></a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="buttons">
-                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
-                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
-            </div>
-        </div>
-    </div>
-    <script src="carousel.js"></script>
 
     <!-- Footer Section -->
 
