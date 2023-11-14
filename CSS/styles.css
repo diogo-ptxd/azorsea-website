@@ -893,3 +893,26 @@ body {
     top: 0;
     transform: rotateZ(180deg);
 }
+
+
+/*               In case the user is using a noscript type of Extension                            */
+
+        /* Style for the noscript message */
+        .noscript-message {
+            font-family: Arial, sans-serif;
+            color: red;
+            font-size: 16px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 9999999;
+            height: 100%;
+          }
+          .noscript-message img{
+              max-height: fit-content;
+              max-width: 250px;
+          }

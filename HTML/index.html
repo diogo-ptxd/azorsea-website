@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="carouselStyle.css">
-    <script src="../JS/main.js"></script>
+    <script src="/JS/main.js"></script>
     <title>AzorSea Adventures</title>
 </head>
 
 <body>
+
     <!-- Wrap for centering navbar -->
     <div class="wrap">
         <!-- Topnav for PC -->
@@ -177,7 +178,7 @@
             </div>
         </div>
     </div>
-    <script src="carousel.js"></script>
+    <script src="/HTML/carousel.js"></script>
 
     <!-- Review Slider -->
 
@@ -399,6 +400,9 @@
         <p>Copyright © 2023 AzorSea Adventures. Todos os direitos reservados.</p>
     </div>
 
+    <noscript class="noscript-message">
+        <p>Please enable JavaScript to use this website.</p> <img src="/images/stop.png" alt="">
+    </noscript>
     <!-- Script for Auto loading slides + changing the current active dot -->
     <script>
         let i;
@@ -422,6 +426,20 @@
             setTimeout(showSlidesAuto, 3000); // Change image every 3 seconds
         }
 
+    </script>
+    <script>
+        // Function to check if a specific function from the JS file has been loaded
+        function isJsLoaded() {
+            return typeof showSlidesAuto !== 'undefined';
+        }
+
+        // Check if the JS has been loaded
+        if (isJsLoaded()) {
+            console.log('JavaScript file has been loaded!');
+            // Perform actions assuming the JS file is loaded
+        } else {
+            console.log('JavaScript file has not been loaded yet.');
+        }
     </script>
 </body>
 
