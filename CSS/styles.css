@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -6,6 +9,16 @@ body {
     overflow-x: hidden;
 }
 
+a, h1, h2, h3, p{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.aboutus h1{
+    letter-spacing: -1px;
+    font-weight: 550;
+}
 
 .wrap {
     overflow: hidden;
@@ -148,7 +161,6 @@ body {
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .topnav a{
@@ -158,7 +170,6 @@ body {
 .slideshow-container a:hover,
 .topnav a:hover {
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: inline-block;
     color: rgb(16,25,32);
 }
@@ -347,7 +358,7 @@ body {
     display: inline-block;
     font-size: 16px;
     transition: 0.3s;
-    margin-right: 30px;
+    margin-left: -100px;
 }
 
 .aboutuswrap {
@@ -367,7 +378,9 @@ body {
     border-radius: 10px;
     max-width: 100%;
     margin-top: 4%;
+    width: 60%;
 }
+
 
 .aboutus {
     width: 100%;
@@ -385,21 +398,44 @@ body {
     width: 99%;
 }
 
-.aboutus-img{
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
+.aboutus-table-wrap{
+    width: 50%;
 }
 
+
+.aboutus-img{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 50%;
+    justify-content: right;
+}
+
+.aboutus-img img{
+    position: absolute;
+    width: fit-content;
+    height: 90%;
+}
+
+@media(max-width: 1500px){
+    .aboutuswrap{
+        width: 90%;
+    }
+
+    .aboutus-img img{
+        position: relative;
+    }
+
+    .aboutus{
+        width: 100%;
+    }
+
+}
 .aboutus-table-wrap {
     display: flex;
     padding-left: 10px;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 100%;
     margin-right: 5px;
-    width: 50%;
     padding-bottom: 20px;
     padding-left: 20px;
     max-width: fit-content; /* Set a maximum width */
@@ -417,14 +453,18 @@ body {
     margin: 20px 0 20px 0;
     color: rgb(0, 0, 0);
     font-size: 20px;
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 28px;
     /* You can adjust this as needed */
 }
 
 .aboutus-btn-wrapper {
     display: flex;
+    position: relative;
     justify-content: flex-end;
     /* Aligns the button to the right */
-    margin-left: 30px;
+    margin-right: 40px;
     /* Adjust margin as needed */
 }
 
@@ -444,34 +484,33 @@ body {
     border-radius: 5px;
     /* Makes it more square with rounded corners */
     cursor: pointer;
-    bottom: 10px;
+    bottom: -10px;
     /* Adjust the distance from the bottom */
     /* Adjust the distance from the right */
     transition: 0.3s;
+    position: absolute;
 }
 
 .aboutus-btn:hover{
     border-radius: 15px;
 }
 
-.aboutus-btn-wrapper a{
-    position: absolute;
-    bottom: 0;
-}
-
 @media(max-width: 1450px){
     .aboutus-btn-wrapper{
-        order: 2;
+        order: 0;
+        bottom: 0;
     }
     .seemorebtn{
         bottom: 0;
-        margin-left: 10px;
+    }
+    .aboutus-btn-wrapper a{
+        display: flex;
+        text-decoration: none;
     }
 }
 @media(max-width: 1400px){
     .seemorebtn{
         bottom: 20px;
-        margin-left: 10px;
     }
 }
 @media(max-width: 1000px){
@@ -479,6 +518,8 @@ body {
         display: block;
         justify-content: center;
         align-items: center;
+        width: 60%;
+        overflow: hidden;
     }
     .aboutus{
         display: block;
@@ -488,14 +529,24 @@ body {
         height: fit-content;
     }
 
-    .aboutus-table-wrap{
-        width: 100%;
+    .aboutus-img{
+        margin: 0;
+        padding: 0;
         justify-content: center;
-        align-items: center;
     }
 
+        
+    .aboutus-img{
+        left: 25%;
+    }
 }
 
+@media(max-width: 650px){
+    .aboutuswrap{
+        width: 100%;
+    }
+    
+}
 /* End of about us styling */
 
 /* -------------------------------------------- Products Showcase ------------------------------------ */
@@ -827,7 +878,6 @@ body {
     border: 2px solid rgb(255,231,21);
     border-radius: 15px;
     background-color: rgb(16, 25, 32);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .slide-track {
@@ -899,7 +949,6 @@ body {
 
         /* Style for the noscript message */
         .noscript-message {
-            font-family: Arial, sans-serif;
             color: red;
             font-size: 16px;
             text-align: center;
