@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../CSS/styles.css">
-    <link rel="stylesheet" href="/routes/Servicos/CSS/allServicesStyles.css">
+    <link rel="stylesheet" href="/routes/Servicos/boats/boats.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../../../JS/main.js"></script>
-    <title>Mergulho</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/routes/team/team.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>Boat</title>
 </head>
 
 <body>
-    <!-- We use wrap for centering our topnav -->
+
+    <!-- Wrap for centering navbar -->
     <div class="wrap">
-        <!-- topnav is used as a container for the sections -->
+        <!-- Topnav for PC -->
         <div class="topnav" id="topnavId">
 
-            <a href="../../../HTML/index.html"><img src="../../../images/logo.png" width="210px" height="50px" ;></a>
+            <a href="#"><img src="/images/logo.png" width="210px" height="50px" ;></a>
             <!-- Home Section aka Main Page Navigation Section -->
             <div class="home">
                 <a href="/HTML/index.html">Home</a>
@@ -28,18 +30,18 @@
             </div>
             <!-- Services Section -->
             <div class="services">
-                <a href="../servicos.html">Serviços</a>
+                <a href="/routes/Servicos/servicos.html">Serviços</a>
             </div>
             <!-- Pricing Section -->
             <div class="equipa">
                 <a href="/routes/team/team.html">Equipa</a>
             </div>
             <div class="blog">
-                <a href="#">Blog</a>
+                <a href="/routes/Servicos/boats/boats.html">Barcos</a>
             </div>
         </div>
     </div>
-
+    <!-- End of wrap -->
 
     <!-- Topnav for Mobile -->
     <!-- Top Navigation Menu -->
@@ -51,7 +53,7 @@
             <a href="/routes/about-us/aboutus.html">Sobre Nós</a>
             <a href="/routes/Servicos/servicos.html">Serviços</a>
             <a href="/routes/team/team.html">Equipa</a>
-            <a href="#about">Blog</a>
+            <a href="/routes/Servicos/boats/boats.html">Barcos</a>
         </div>
         <!-- Hamburguer Menu Script -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -80,88 +82,55 @@
     <!-- End of Topnav for Mobile -->
 
 
-    <!-- End of wrap -->
-    <!-- Slideshow container -->
-    <div class="fogwrapper">
-        <div class="slideshow-container">
 
-            <!-- Full-width images with caption text -->
-            <div class="mySlides fade">
-                <img src="../../../../images/passeiodebarco.jpg" style="width:100%" height="1000px">
-                <div class="text changecol"><a href="#">Pesca</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="boat-wrapper">
+        <div class="barco-wrap">
+
+            <div class="barco1">
+                <div class="title"><p>Espadim</p></div>
+                
+                <div class="imagembarco1"><img src="/images/azorsea_boat.jpg" alt=""></div>
+                
+                <div class="info-barcos">
+                    <p>Tamanho: 8m</p>
+                    <p>Capacidade: 8 Pessoas</p>
+                    <p>Potência: 200 hp</p>
+                    <p>Vel. MAX: 22 kn</p>
+                </div>
+
             </div>
 
-            <div class="mySlides fade">
-                <img src="../../../../images/passeiodebarco2.jpg" style="width:100%" height="1000px">
-                <div class="text"><a href="#">Barco AzorSea</a></div>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../../../../images/passeiodebarco3.jpg" style="width:100%" height="1000px">
-                <div class="text"><a href="#">Peixe Recentemente Pescado</a></div>
-            </div>
-
-            <!-- Next and previous buttons -->
         </div>
-    </div>
-    <br>
-    <div class="card-wrapper">
-        <div class="service-card">
-            <div class="service-image">
-                <img src="../../../images/azorsea.jpg" alt="Service Image 2">
-            </div>
-            <div class="service-details">
-                <h2>Mergulho</h2>
-                <p>Na AzorSea Adventures, fornecemos experiências inigualáveis no mundo do big game fishing. <br><br>
+        <div class="barco-wrap">
 
-                    Desafie os gigantes do oceano a bordo da nossa embarcação e desfrute de uma aventura de pesca de
-                    alto-mar. <br> <br> O big game fishing é a emocionante busca por espécies impressionantes, como
-                    marlins,
-                    veleiros, atuns e tubarões, conhecidos pela sua força e resistência.</p>
-                <a href="https://www.facebook.com/azorseaadventures" class="btnlink" target="_blank">
-                    <button class="seemorebtn">Reserve Já!</button>
-                </a>
-            </div>
-            <div class="pricing-box">
-                <div class="price-marker">PAX: 35€</div>
-                <div class="price-marker bottom-marker">1H: 140€</div>
-                <div class="price-details">
-                    <!-- Include other pricing details here -->
+            <div class="barco1">
+                <div class="title"><p>Gypsea Blues</p></div>
+                <div class="imagembarco1"><img src="/images/barconovo.jpg" alt=""></div>
+                
+                <div class="info-barcos">
+                    <p>Tamanho: 10m</p>
+                    <p>Capacidade: 12 Pessoas</p>
+                    <p>Potência: 2x370 hp</p>
+                    <p>Vel. MAX: 30 kn</p>
                 </div>
             </div>
         </div>
-        <div class="pricing-table">
-            <table>
-                <tr>
-                    <div class="wrapper">
-                        <h1>Preço</h1>
-                        <h2>1H: 140€</h2>
-                        <h2>2H: 240€</h2>
-                        <h2>3H: 348€</h2>
-                        <h2>4H: 440€</h2>
-                        <h2>8H: 800€</h2>
-                    </div>
-                </tr>
-                <tr>
-                    <div class="wrapper">
-                        <h1>PAX</h1>
-                        <h2>1H: 35€</h2>
-                        <h2>2H: 60€</h2>
-                        <h2>3H: 87€</h2>
-                        <h2>4H: 110€</h2>
-                        <h2>8H: 200€</h2>
-                    </div>
-                </tr>
-            </table>
-        </div>
     </div>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+</body>
 
 
     <!-- Footer Section -->
@@ -185,13 +154,7 @@
                     <td><a href="/routes/Servicos/PasseiodeBarco/passeiodebarco.html">Passeios de Barco</a></td>
                 </tr>
                 <tr>
-                    <td><a href="/routes/Servicos/PescadeFundo/pescadefundo.html">Pesca de Fundo</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/routes/Servicos/CorricodeCosta/corrico.html">Corrico de Costa</a></td>
-                </tr>
-                <tr>
-                    <td><a href="/routes/Servicos/Mergulho/mergulho.html">Mergulho</a></td>
+                    <td><a href="/routes/Servicos/CorricodeCosta/corrico.html">Pesca de Costa</a></td>
                 </tr>
                 <tr>
                     <td><a href="/routes/Servicos/BigGameFishing/biggamefishing.html">Big Game Fishing</a></td>
@@ -213,6 +176,9 @@
                 </tr>
                 <tr>
                     <td><a href="complaints.html">Livro de Reclamações</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.tripadvisor.pt/Attraction_Review-g1190889-d8638832-Reviews-AzorSea_Adventures-Vila_Franca_do_Campo_Sao_Miguel_Azores.html" target="_blank">Tripadvisor</a></td>
                 </tr>
             </table>
         </div>
@@ -263,33 +229,9 @@
         </map>
         <p>Copyright © 2023 AzorSea Adventures. Todos os direitos reservados.</p>
     </div>
-    <!-- Script for Auto loading slides + changing the current active dot -->
-    <script>
-        let i;
 
-        showSlidesAuto();
-
-        function showSlidesAuto() {
-            let i;
-            let dots = document.getElementsByClassName("dot");
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            if (slideIndex > slides.length) { slideIndex = 1 } dots[slideIndex - 1].className += " active";
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlidesAuto, 3000); // Change image every 3 seconds
-        }
-
-    </script>
-        <noscript class="noscript-message">
-            <p>Please enable JavaScript to use this website.</p> <img src="/images/stop.png" alt="">
-        </noscript>
-</body>
+    <noscript class="noscript-message">
+        <p>Please enable JavaScript to use this website.</p> <img src="/images/stop.png" alt="">
+    </noscript>
 
 </html>
